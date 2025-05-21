@@ -6,6 +6,11 @@ android {
     namespace = "com.example.movieapp"
     compileSdk = 35
 
+
+    compileOptions{
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         applicationId = "com.example.movieapp"
         minSdk = 21
@@ -37,6 +42,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.inappmessaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -45,4 +51,11 @@ dependencies {
 
     implementation ("com.github.bumptech.glide:glide:4.16.0") // Glide kütüphanesi
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0") // Glide derleyici
+
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
+    implementation("androidx.media3:media3-ui:1.3.1")
+
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+
+
 }
