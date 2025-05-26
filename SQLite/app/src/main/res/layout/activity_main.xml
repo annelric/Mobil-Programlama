@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/TextAd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Ad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextSoyad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Soyad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextAd" />
+
+    <EditText
+        android:id="@+id/TextYas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Yas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextSoyad" />
+
+    <EditText
+        android:id="@+id/TextSehir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sehir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextYas" />
+
+    <Button
+        android:id="@+id/buttonKayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ekle"
+        app:layout_constraintStart_toStartOf="@+id/TextSehir"
+        app:layout_constraintTop_toBottomOf="@+id/TextSehir" />
+
+    <Button
+        android:id="@+id/buttonGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıtları Göster"
+        app:layout_constraintStart_toStartOf="@+id/buttonKayit"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKayit" />
+
+    <Button
+        android:id="@+id/buttonSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Sil"
+        app:layout_constraintStart_toStartOf="@+id/buttonGoster"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoster" />
+
+    <Button
+        android:id="@+id/buttonGuncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Güncelle"
+        app:layout_constraintStart_toStartOf="@+id/buttonSil"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSil" />
+
+    <TextView
+        android:id="@+id/textViewBilgiler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGuncelle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
